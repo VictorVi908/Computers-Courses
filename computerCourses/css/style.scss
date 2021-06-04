@@ -443,7 +443,7 @@ a {
 
     @media (max-width: 1366px) {
         .partners__logos {
-            width: 960px;
+            width: 1100px;
             height: 210px;
         }
     }
@@ -639,5 +639,100 @@ a {
         border: 1px solid #ffffff;
         border-radius: 50px;
         padding: 10px 30px;
+    }
+}
+
+.footer {
+    margin-bottom: 106px;
+
+    &__inner {
+        text-align: center;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        margin-bottom: 60px;
+        text-align: center;
+        opacity: 0.5;
+        font-weight: 400;
+    }
+
+    &__email {
+        padding-right: 105px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    &__emai-line {
+        width: 353px;
+        height: 44px;
+        background-color: rgba($color: #fff, $alpha: 0.25);
+        border-radius: 50px 0px 0px 50px;
+        padding: 15px 40px 15px 30px;
+        border: none;
+        font-size: 14px;
+        color: #fff;
+        outline: none;
+    }
+
+    &__subscribe-btn {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+        border-radius: 50px;
+        padding: 10px 30px;
+        width: 160px;
+        height: 44px;
+        color: #fff;
+        border: none;
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    &__emai-line::placeholder {
+        color: #fff;
+    }
+
+    &__emai-line::-webkit-input-placeholder {
+        color: #fff;
+    }
+    &__emai-line::-moz-placeholder {
+        color: #fff;
+    }
+    &__emai-line:-moz-placeholder {
+        color: #fff;
+    }
+    &__emai-line:-ms-input-placeholder {
+        color: #fff;
+    }
+// 
+// 
+// 
+// 
+// 
+
+    &__social {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-wrapper {
+        background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 30px;
+    }
+
+    &__social-img {
+        padding: 14px 10px;
     }
 }
