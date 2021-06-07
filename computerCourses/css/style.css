@@ -71,7 +71,6 @@ a {
 @media (max-width: 1366px) {
   .first-screen {
     background-size: 100% 75%;
-    min-height: 960px;
   }
 }
 
@@ -247,7 +246,7 @@ a {
 .statistic__goal-line::before {
   content: "";
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-  width: 440px;
+  width: 40%;
   height: 6px;
   z-index: 10;
   position: absolute;
@@ -265,10 +264,6 @@ a {
   }
   .statistic__goal-line {
     width: 513px;
-  }
-  .statistic__goal-line::before {
-    content: "";
-    width: 322px;
   }
   .statistic .statistic__text {
     -webkit-box-flex: 0;
@@ -453,7 +448,6 @@ a {
 
 .work__item-img {
   margin-bottom: 60px;
-  font-weight: 500;
 }
 
 .work__item-title {
@@ -818,5 +812,347 @@ a {
 
 .footer__social-img {
   padding: 14px 10px;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 30px;
+  display: none;
+}
+
+.menu__btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  left: 0;
+  position: absolute;
+  top: 14px;
+}
+
+.menu__btn::after, .menu__btn::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+}
+
+.menu__btn::before {
+  top: 0;
+}
+
+.menu__btn::after {
+  bottom: 0;
+}
+
+@media (max-width: 1180px) {
+  .statistic__goal-line {
+    width: 445px;
+  }
+  .statistic__students-inner {
+    margin-right: -50px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .activity__images {
+    margin-right: 38px;
+  }
+  .start .start__rate-item {
+    width: 200px;
+  }
+  .start .start__rate-text {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1071px) {
+  .header__btn {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+  .menu__list-link {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .first-screen {
+    background-size: 100% 67%;
+  }
+  .menu__list-item + .menu__list-item {
+    margin-left: 30px;
+  }
+  .top__title {
+    font-size: 45px;
+  }
+  .top .time {
+    padding: 10px 20px;
+    width: 89px;
+    height: 95px;
+  }
+  .work__item-title {
+    font-size: 20px;
+  }
+  .work__item-text {
+    font-size: 14px;
+  }
+  .work__title {
+    margin-bottom: 87px;
+  }
+  .work {
+    margin-bottom: 95px;
+  }
+  .work__item-img {
+    margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 992px) {
+  .statistic__goal-line {
+    width: 360px;
+  }
+  .statistic__goal-line::before {
+    width: 40%;
+  }
+  .statistic__student-profit {
+    margin-right: 17px;
+  }
+  .statistic__students-inner {
+    margin-right: 45px;
+  }
+  .statistic__students-inner {
+    display: block;
+  }
+  .statistic__sum {
+    padding-left: 0;
+  }
+  .statistic__btn {
+    margin-right: 36px;
+  }
+  .statistic {
+    font-size: 13px;
+    line-height: 139%;
+  }
+  .activity__description-title {
+    font-size: 30px;
+  }
+  .activity__description-text {
+    font-size: 14px;
+  }
+  .start__rate-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .start .start__rate-text {
+    margin-bottom: 20px;
+  }
+  .start .start__rate-item {
+    width: 250px;
+  }
+  .start .start__rate-text {
+    width: 250px;
+    padding-bottom: 10px;
+  }
+  .start__rate-body {
+    margin-bottom: 25px;
+  }
+  .start .body-middle {
+    margin-top: 10px;
+  }
+  .start .body-small {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .start .body-smallest {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .work__inner {
+    display: block;
+  }
+  .work__item {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 890px) {
+  .first-screen {
+    background: none;
+  }
+  .header__menu-list {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #1b1b1b;
+    margin-top: 30px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  .menu__btn {
+    display: block;
+    position: absolute;
+    left: 165px;
+    top: 47px;
+  }
+  .menu__list-item + .menu__list-item {
+    margin-left: 0;
+  }
+  .menu__list-link {
+    display: block;
+    padding: 13px 0;
+  }
+  .header__menu-list.header__menu-list--active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .activity__images {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .statistic__inner {
+    display: block;
+  }
+  .statistic__students-inner {
+    display: block;
+  }
+  .statistic__profit {
+    margin-top: 10px;
+  }
+  .statistic__btn {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .statistic__goal-line::before {
+    width: 40%;
+  }
+}
+
+@media (max-width: 650px) {
+  .work__title {
+    margin-bottom: 47px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 610px) {
+  .top__title {
+    font-size: 35px;
+  }
+  .top .time {
+    padding: 5px 15px;
+    width: 79px;
+    height: 70px;
+  }
+  .top .time h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .statistic,
+  .activity,
+  .start,
+  .work {
+    margin-bottom: 85px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .menu__btn {
+    left: 105px;
+  }
+  .top__title {
+    margin-top: 93px;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .top .countdown__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 51px;
+  }
+  .top .time {
+    margin-top: 10px;
+  }
+  .start__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .start__title::before {
+    background-size: 60%;
+    height: 100px;
+    width: 100px;
+  }
+  .start .start__text {
+    margin-bottom: 26px;
+    font-size: 12px;
+  }
+  .work__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 410px) {
+  .work__item {
+    width: 300px;
+  }
+  .work__item-text {
+    font-size: 12px;
+  }
+  .work__item-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .start__rate-inner {
+    width: 270px;
+  }
+  .start .start__text {
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+  .work__item {
+    width: 270px;
+  }
+  .work__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 14px;
+  }
+  .top__title {
+    font-size: 30px;
+  }
+  .start__title {
+    font-size: 26px;
+  }
+  .start .start__text {
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

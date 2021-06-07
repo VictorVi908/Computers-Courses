@@ -1,3 +1,12 @@
+$(function(){
+    $('.menu__btn').on('click',function(){
+        $('.header__menu-list').toggleClass('header__menu-list--active')
+    });
+});
+
+
+
+
 // const  countDownEl = document.getElementById("countdown");
 // var time  = 1555200000;
 // setInterval(updateCountdown, 1000);
