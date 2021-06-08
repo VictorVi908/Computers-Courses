@@ -70,7 +70,7 @@ a {
 
 @media (max-width: 1366px) {
   .first-screen {
-    background-size: 100% 75%;
+    background-size: 100% 90%;
   }
 }
 
@@ -847,12 +847,23 @@ a {
   bottom: 0;
 }
 
+.partners__logos--tablet {
+  display: none;
+}
+
+.programms__graph--tablet {
+  display: none;
+}
+
 @media (max-width: 1180px) {
   .statistic__goal-line {
     width: 445px;
   }
   .statistic__students-inner {
     margin-right: -50px;
+  }
+  .first-screen {
+    background-size: 100% 87%;
   }
 }
 
@@ -866,6 +877,13 @@ a {
   .start .start__rate-text {
     width: 200px;
   }
+  .partners .partners__logos {
+    width: 894px;
+    height: 175px;
+  }
+  .tutors__item + .tutors__item {
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 1071px) {
@@ -876,9 +894,6 @@ a {
   .menu__list-link {
     font-size: 14px;
     line-height: 150%;
-  }
-  .first-screen {
-    background-size: 100% 67%;
   }
   .menu__list-item + .menu__list-item {
     margin-left: 30px;
@@ -909,6 +924,9 @@ a {
 }
 
 @media (max-width: 992px) {
+  .first-screen {
+    background: none;
+  }
   .statistic__goal-line {
     width: 360px;
   }
@@ -980,12 +998,21 @@ a {
     margin: 0 auto;
     margin-bottom: 15px;
   }
+  .partners .partners__logos {
+    width: 653px;
+    height: 147px;
+  }
+  .partners {
+    margin-bottom: 145px;
+  }
+  .partners__title {
+    margin-bottom: 60px;
+    padding-left: 75px;
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 890px) {
-  .first-screen {
-    background: none;
-  }
   .header__menu-list {
     display: block;
     position: absolute;
@@ -1021,6 +1048,9 @@ a {
   .activity__images {
     display: none;
   }
+  .partners__title::before {
+    background-size: 54%;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1040,12 +1070,92 @@ a {
   .statistic__goal-line::before {
     width: 40%;
   }
+  .tutors__name {
+    font-size: 21px;
+  }
+  .tutors__post {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .tutors__item + .tutors__item {
+    margin-left: 0;
+  }
+  .tutors__inner {
+    display: block;
+  }
+  .tutors__item {
+    margin-bottom: 40px;
+  }
+  .tutors__item-img {
+    margin-bottom: 6px;
+  }
+  .tutors {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 690px) {
+  .partners .partners__logos {
+    display: none;
+  }
+  .partners__logos--tablet {
+    display: block;
+    margin: 0 auto;
+  }
+  .programms__item-text {
+    font-size: 14px;
+  }
+  .programms__item-subtitle {
+    font-size: 14px;
+  }
+  .programms__graph-even {
+    margin-left: 42px;
+  }
+  .programms .item-even:nth-child(1):before {
+    width: 24px;
+    left: -42px;
+  }
+  .programms .item-even:nth-child(2):before {
+    width: 24px;
+    left: -42px;
+  }
+  .programms .item-even:nth-child(3):before {
+    width: 24px;
+    left: -42px;
+  }
+  .programms__graph-odd {
+    margin-right: 40px;
+  }
+  .programms .item-odd:nth-child(1)::after {
+    width: 24px;
+    right: -40px;
+  }
+  .programms .item-odd:nth-child(2)::after {
+    width: 24px;
+    right: -40px;
+  }
+  .programms .item-odd:nth-child(3)::after {
+    width: 24px;
+    right: -40px;
+  }
+  .programms .item-odd:nth-child(4)::after {
+    width: 24px;
+    right: -40px;
+  }
 }
 
 @media (max-width: 650px) {
   .work__title {
     margin-bottom: 47px;
     font-size: 30px;
+  }
+  .partners__title {
+    margin-bottom: 55px;
+    padding-left: 65px;
+    font-size: 30px;
+  }
+  .programms {
+    margin-bottom: 100px;
   }
 }
 
@@ -1067,6 +1177,57 @@ a {
   .start,
   .work {
     margin-bottom: 85px;
+  }
+  .partners__title::before {
+    background-size: 47%;
+  }
+  .programms__graph-even {
+    margin-left: 5px;
+  }
+  .programms .item-even:nth-child(1):before {
+    display: none;
+  }
+  .programms .item-even:nth-child(2):before {
+    display: none;
+  }
+  .programms .item-even:nth-child(3):before {
+    display: none;
+  }
+  .programms__graph-odd {
+    margin-right: 5px;
+  }
+  .programms .item-odd:nth-child(1)::after {
+    display: none;
+  }
+  .programms .item-odd:nth-child(2)::after {
+    display: none;
+  }
+  .programms .item-odd:nth-child(3)::after {
+    display: none;
+  }
+  .programms .item-odd:nth-child(4)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .programms__graph {
+    display: none;
+  }
+  .programms__graph--tablet {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .programms__subtitle--tablet {
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.5;
+  }
+  .programms__text--tablet {
+    font: 14px;
+    line-height: 160%;
+    padding-bottom: 10px;
   }
 }
 
@@ -1111,6 +1272,16 @@ a {
   .work__title {
     font-size: 28px;
   }
+  .partners__title {
+    font-size: 26px;
+  }
+  .partners__title::before {
+    background-size: 60%;
+  }
+  .partners__title::before {
+    width: 91px;
+    height: 91px;
+  }
 }
 
 @media (max-width: 410px) {
@@ -1138,6 +1309,13 @@ a {
   }
   .work__title {
     font-size: 24px;
+  }
+  .partners__title {
+    font-size: 23px;
+    padding-left: 44px;
+  }
+  .partners__title::before {
+    background-size: 55%;
   }
 }
 
